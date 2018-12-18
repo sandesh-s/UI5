@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="utf-8">
+	<title>Hello World December 2018</title>
+	<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			id="sap-ui-bootstrap"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-libs="sap.m">
+	</script>
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+			var app = new sap.m.App("myApp", {
+				initialPage:"page1"
+			});
+		});
+		
+	</script>
+</head>	
+<body class="sapUiBody" id="content"></body>	
+</html>
