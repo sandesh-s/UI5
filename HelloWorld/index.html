@@ -20,20 +20,27 @@
 				title :"Hello World",
 				showNavButton : false,
 				content : new sap.m.Button({
-					text : "Goto Page2"
+					text : "Goto to Page2"
 					press : function(){
 						app.to("Page2");
 					}
-				}
-				
-					
-				})
+				});
 			});
-			app.addPage(page1);
+			
+			var page2 = new sap.m.Page("page2",{
+				title: "Hello Page 2",
+				showNavButon: true,
+				navButtonPress : function(){
+					app.back();
+				}
+			});
+			
+			app.addPage(page1).addPage(page2);
 			app.placeAt("content");
 		});
 		
 	</script>
 </head>	
-<body class="sapUiBody" id="content"></body>	
+<body class="sapUiBody" id="content">
+</body>	
 </html>
