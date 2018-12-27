@@ -10,12 +10,16 @@
          data-sap-ui-theme="sap_belize"
          data-sap-ui-libs="sap.m"
          data-sap-ui-compatVersion="edge"
-         data-sap-ui-preload="async" >
+         data-sap-ui-preload="async" 
+         data-sap-ui-resourceroots='{"sandesh":"./"}'>
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-             new sap.m.Text({
-             	text : "Hello World via sap.m.Text"
+             // Below 2 lines are commented since now the view will be loaded from folder view-->viewname
+             //new sap.m.Text({
+             //	text : "Hello World via sap.m.Text"
+             sap.ui.xmlview({
+             viewName : "sandesh.view.App"	
              }).placeAt("content");
          });
       </script>
