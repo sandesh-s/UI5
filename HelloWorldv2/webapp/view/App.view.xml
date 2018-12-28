@@ -2,9 +2,15 @@
 	controllerName="sandesh.controller.App"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Text text="This view is loaded from view-->File"/>
+	<Text text="This view is loaded from view.xml"/>
 	<Button
 		text="Say Hello"
 		press="onShowHellow"/>
+		
+	<Input
+		value="{/recipient/name}"
+		description="Hello{/recipient/name}"
+		valueLiveUpdate="true"
+		width="60%"/>
 </mvc:View>
 
