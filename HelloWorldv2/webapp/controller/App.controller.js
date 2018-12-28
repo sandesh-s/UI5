@@ -5,7 +5,7 @@ sap.ui.define([
 	"use strict";
    return Controller.extend("sandesh.controller.App", {
 		onShowHellow : function(){
-			//alert("Hello World"); // eslint-disable-line no-alert
+			//alert("JS Alert - Hello World"); // eslint-disable-line no-alert
 			MessageToast.show("Toast Message");
 		}	
 	});
