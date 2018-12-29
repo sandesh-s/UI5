@@ -18,8 +18,15 @@
              // Below 2 lines are commented since now the view will be loaded from folder view-->viewname
              //new sap.m.Text({
              //	text : "Hello World via sap.m.Text"
-             sap.ui.xmlview({
-             viewName : "sandesh.view.App"	
+             //xmlview is now commented since Component.js will be initialised first
+             //sap.ui.xmlview({
+             //viewName : "sandesh.view.App"	
+             new sap.ui.core.ComponentContainer({
+          name: "sandesh",
+          settings : {
+          	id : "sandesh"
+          }
+             
              }).placeAt("content");
          });
       </script>

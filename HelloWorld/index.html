@@ -11,8 +11,10 @@
 	</script>
 	<script type="text/javascript">
 		sap.ui.getCore().attachInit(function() {
-			var app = new sap.m.App("myApp", {
-				initialPage:"page1"
+			//Below lines are commented since now the Component.js will be called on
+			//init function which will loaded 
+			// var app = new sap.m.App("myApp", {
+			// 	initialPage:"page1"
 			});
 			
 			//Create First Page
