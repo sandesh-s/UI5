@@ -7,12 +7,14 @@ sap.ui.define([
 	"use strict";
 	return UIComponent.extend("sandesh.Component",{
 		metadata : {
-			rootView: {
+			//rootView is commented since manifest.json file holds this information
+			/*rootView: {
 				"viewName":"sandesh.view.App",
 				"type":"XML",
 				"async":true,
 				"id":"app"
-			}
+			}*/
+			manifest:"json"
 		},
 		
 		init : function() {
