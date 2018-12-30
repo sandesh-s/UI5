@@ -21,12 +21,13 @@
              //xmlview is now commented since Component.js will be initialised first
              //sap.ui.xmlview({
              //viewName : "sandesh.view.App"	
-             new sap.ui.core.ComponentContainer({
-          name: "sandesh",
-          settings : {
-          	id : "sandesh"
-          }
-             
+             new sap.m.Shell({
+                  app: new sap.ui.core.ComponentContainer({
+		          name: "sandesh",
+		          settings : {
+		          id : "sandesh"
+        		 }
+              })
              }).placeAt("content");
          });
       </script>
