@@ -4,7 +4,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
 	<!--<Text text="View loaded from view.xml"/>-->
-	<App>
+	<App class="myAppDemoWT">
 		<pages>
 			<Page title="{i18n>homePageTitle}">
 				<content>
@@ -16,15 +16,20 @@
 							<Button
 								text="{i18n>showHelloButtonText}"
 								press="onShowHellow"
-								class="sapUiSmallMarginEnd"/>
+								class="sapUiSmallMarginEnd"
+								class="myCustomButton"/>
 								
 							<Input
 								value="{/recipient/name}"
 								valueLiveUpdate="true"
 								width="60%"/>
-							<Text
+							<FormattedText
+								htmlText="Hello {/recipient/name}"
+								class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/> 	
+						<!--	Logic below is now implemented in the Formatted text via CSS classes
+								<Text
 								text="Hello {/recipient/name}"
-								class="sapUiSmallMargin"/>
+								class="sapUiSmallMargin"/>-->
 						</content>
 					</Panel>
 				</content>
