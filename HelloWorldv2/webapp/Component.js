@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
+	"sap/ui/model/json/JSONModel"
+	// "sap/ui/model/resource/ResourceModel"    //this is handled by manifest.json
 	
 ],	 function (UIComponent, JSONModel, ResourceModel) {
 	"use strict";
@@ -28,12 +28,12 @@ sap.ui.define([
          };
         	var oModel = new JSONModel(oData);
         	this.setModel(oModel);
-
+		//code below is block commented since this is addressed in manifest.js
          // set i18n model
-        	var i18nModel = new ResourceModel({
+        /*	var i18nModel = new ResourceModel({	
             bundleName : "sandesh.i18n.i18n"
          });
-         this.setModel(i18nModel, "i18n");
+         this.setModel(i18nModel, "i18n");*/
 		}
 	});
 
