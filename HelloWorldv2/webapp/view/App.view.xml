@@ -16,7 +16,6 @@
 							<Button
 								text="{i18n>showHelloButtonText}"
 								press="onShowHellow"
-								class="sapUiSmallMarginEnd"
 								class="myCustomButton"/>
 								
 							<Input
@@ -37,4 +36,3 @@
 		</pages>
 	</App>
 </mvc:View>
-
