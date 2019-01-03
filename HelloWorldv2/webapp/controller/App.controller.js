@@ -1,12 +1,14 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/mvc/Controller"
+/*	Below logic is now implemented in HelloPanel.controller.js
 	"sap/m/MessageToast",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
-], function (Controller, MessageToast, JSONModel, ResourceModel) {
+	"sap/ui/model/resource/ResourceModel"*/
+], function (Controller) {
 	"use strict";
    return Controller.extend("sandesh.controller.App", {
-		onInit : function () {
+			/*Below logic is now implemented in HelloPanel.controller.js
+			onInit : function () {
 			// set data model on view
 			var oData = {
 				recipient : {
@@ -30,6 +32,6 @@ sap.ui.define([
 			//alert("JS Alert - Hello World"); // eslint-disable-line no-alert
 			//MessageToast.show("Toast Message"); //commenting this line since message will be displayed by i18n properties
 			MessageToast.show(sMsg);
-		}	
+		}*/	
 	});
 });
