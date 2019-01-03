@@ -11,6 +11,17 @@ sap.ui.define([
          var sMsg = oBundle.getText("helloMsg", [sRecipient]);
          // show message
          MessageToast.show(sMsg);
+      },
+      onOpenDialog : function () {
+      	var oView = this.getView();
+      	var oDialog = oView.byId("helloDialog");
+      	//Create Dialog lazily
+      	if(!oDialog) {
+      		//create dialog via fragment factory
+      		oDialog = sap.ui.xmlfragment(oView.getId(), "sandesh.view.HelloDialog");
+      		oView.addDependent(oDialog);
+      	}
+      	oDialog.open();
       }
    });
 });
