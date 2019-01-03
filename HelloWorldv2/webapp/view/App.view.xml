@@ -28,7 +28,7 @@
 						<!--	Logic below is now implemented in the Formatted text via CSS classes
 								<Text
 								text="Hello {/recipient/name}"
-								class="sapUiSmallMargin"/>-->
+								class="sapUiSmallMargin"/>-->.
 						</content>
 					</Panel>
 				</content>
