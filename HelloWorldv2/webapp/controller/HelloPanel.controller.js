@@ -18,10 +18,14 @@ sap.ui.define([
       	//Create Dialog lazily
       	if(!oDialog) {
       		//create dialog via fragment factory
-      		oDialog = sap.ui.xmlfragment(oView.getId(), "sandesh.view.HelloDialog");
+      		oDialog = sap.ui.xmlfragment(oView.getId(), "sandesh.view.HelloDialog", this);
       		oView.addDependent(oDialog);
       	}
       	oDialog.open();
+      },
+      
+    onCloseDialog : function () {
+      		this.getView().byId("helloDialog").close();
       }
    });
 });
