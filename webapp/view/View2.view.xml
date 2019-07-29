@@ -2,14 +2,22 @@
 
 <f:SimpleForm  editable="true">
 	<f:content>
-		<Label text="First Name"></Label>
-		<Input value="{/Employees/0/firstName}"></Input>
-		<Label text="Last Name"></Label>
-		<Input value="{/Employees/0/lastName}"></Input>	
+		<Label text="Employee ID"></Label>
+		<Input enabled="{/empStr/enabled}" value="{/empStr/empNo}"></Input>
+		
+		<Label text="Employee Name"></Label>
+		<Input enabled="{/empStr/enabled}" value="{/empStr/eName}"></Input>	
+		
+		<Label text="Salary"></Label>
+		<Input enabled="{/empStr/enabled}" value="{/empStr/salary}"></Input>
+		
+		<Label text="Currency"></Label>
+		<Input enabled="{/empStr/enabled}" value="{/empStr/currency}"></Input>
 	</f:content> 
+	
 </f:SimpleForm>
 
-
+<Button text="Make Editable" press="onMakeEditable"></Button>
 
 
 <!--<Label text="First Name"></Label>

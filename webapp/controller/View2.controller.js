@@ -51,8 +51,21 @@ sap.ui.define(
 				);*/
 			//Making the model available to the application
 			sap.ui.getCore().setModel(oModel);
-		}	
+		},
+		
+		onMakeEditable: function(){
+		var oMakeEditable = sap.ui.getCore().getModel();
+		
+		if((oMakeEditable.getProperty("/empStr/enabled"))===true){
+		oMakeEditable.setProperty("/empStr/enabled", false);
+		} else{
+			oMakeEditable.setProperty("/empStr/enabled", true);	
 			
+		}
+		
+				}
+		
+		
 			
 		});
 		
