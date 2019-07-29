@@ -61,9 +61,9 @@ sap.ui.define(
 		} else{
 			oMakeEditable.setProperty("/empStr/enabled", true);	
 			
+			}
+			
 		}
-		
-				}
 		
 		
 			
